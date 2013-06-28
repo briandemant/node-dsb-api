@@ -1,0 +1,22 @@
+{
+	"name" : "dsb-api",
+	"version" : "0.1.0",
+	"description" : "A api to the danish railways (DSB)",
+	"main" : "dsb_api.js",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/briandemant/node-dsbapi.git"
+	},
+	"keywords" : [
+		"DSB",
+		"api"
+	],
+	"author" : "Brian Demant <brian.demant@gmail.com>",
+	"license" : "BSD",
+	"dependencies" : {
+		"request" : "~2.21.0" 
+	},
+	"devDependencies" : {
+		"colors" : "~0.6.0-1"
+	}
+}
