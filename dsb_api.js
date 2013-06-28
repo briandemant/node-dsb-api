@@ -1,20 +1,8 @@
 var request = require('request');
-
-var opendataUrl = "http://traindata.dsb.dk/stationdeparture/opendataprotocol.svc/";
-
+ 
 var api = module.exports = {};
+ 
 
-//function camelCase(str) {
-//	return str.replace(/(:?_|^)(.)/g, function(match, group1,group2) {
-//		return group2.toUpperCase();
-//	});
-//}
-
-
-// http://traindata.dsb.dk/stationdeparture/opendataprotocol.svc/Queue?$format=json&$select=DestinationName
-
-// http://www.dsb.dk/dsb-labs/webservice-stationsafgange/
-// http://www.odata.org/documentation/uri-conventions#45_Filter_System_Query_Option_filter
 function opendata(model, cb, options) {
 	if (!cb) {
 		cb = options;

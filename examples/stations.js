@@ -14,4 +14,10 @@ dsbApi.Station.find({filter : "indexof(tolower(Name), 'odense') gt -1", select :
 	}
 });
 
- 
+
+/*
+ $> node examples/stations.js
+ 48
+ Stations name Odense: Odense
+ Odense sygehus
+*/

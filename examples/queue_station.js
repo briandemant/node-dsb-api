@@ -30,3 +30,16 @@ function printStation(err, queue) {
 
 
 dsbApi.Queue.findOne({filter : "StationUic eq '8600512'", orderBy : 'ScheduledDeparture'}, printStation);
+/*
+$> node examples/queue_station.js
+Train comming into Odense
+          on track undefined
+          going to Fredericia
+         departing Fri, 28 Jun 2013 22:39:00 GMT
+Fri, 28 Jun 2013 22:48:00 GMT  > Tommerup
+Fri, 28 Jun 2013 22:54:00 GMT  > Aarup
+Fri, 28 Jun 2013 22:58:00 GMT  > Gelsted
+Fri, 28 Jun 2013 23:03:00 GMT  > Ejby
+Fri, 28 Jun 2013 23:07:00 GMT  > Nørre Åby
+Fri, 28 Jun 2013 23:14:00 GMT  > Middelfart
+*/
